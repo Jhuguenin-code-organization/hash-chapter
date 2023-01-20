@@ -13,4 +13,11 @@ list_of_people = [
   { :name => "Fatimah", :age => 31 },
   { :name => "Carl", :age => 9 },
 ]
-
+value=list_of_people.count
+i=0
+while i<value
+ if list_of_people[i][:age]>=16
+   p list_of_people[i][:name]
+ end
+ i=i+1
+end

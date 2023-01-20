@@ -11,3 +11,9 @@ sample_hash = {
       }
    }
 }
+class_hash=sample_hash.fetch(:class)
+student_hash=class_hash.fetch(:student)
+marks=student_hash.fetch("marks")
+history=marks.fetch("history")
+p history
+
